@@ -1,0 +1,6 @@
+.data{
+    width:80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
