@@ -1,0 +1,8 @@
+.Music>p{
+   
+    text-align: center;
+}
+.video>iframe{
+    width:100%;
+    height: 500px;
+}
