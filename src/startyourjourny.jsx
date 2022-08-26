@@ -22,7 +22,8 @@ function Journy(){
 <div className={styles.data}>
 {images.map((ele)=>
     <div>
-        <img src={ele.image}/>
+        {/* <img src={ele.image}/> */}
+      
         </div>
     )
     }

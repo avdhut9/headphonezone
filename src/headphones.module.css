@@ -1,0 +1,39 @@
+.button{
+display: flex;
+justify-content: center;
+gap: 20px;
+
+}.button>button{
+    padding:15px 40px 15px 40px;
+    border-radius: 20px;
+    border:1px solid transparent;
+    background-color: blue;
+    color: white;
+}.images{
+    display: flex;
+gap:10px;
+justify-content: center;
+margin-top:3%;
+
+}.images>div{
+  
+   width:16%;
+
+
+}.images>div>img{
+    width: 100%;
+}.images>div>h2{
+    font-size: small;
+}.images>div>p{
+    font-size: small;
+}.viewmore>button{
+    padding:15px 40px 15px 40px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: blue;
+    color: white;
+    margin-top: 3%;
+}.viewmore{
+    display: flex;
+    justify-content: center;
+}
