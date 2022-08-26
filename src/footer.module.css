@@ -1,0 +1,28 @@
+.footer{
+    display:flex;
+    gap:30px;
+   
+    justify-content: space-evenly;
+    background-color: rgb(249,249,249);
+    margin-top: 30px;
+    
+}.insta{
+    display: flex;
+    
+   
+}.insta>div{
+    padding:50px 10px 10px 10px;
+}.footer>div>h3{
+    font-size: small;
+    padding-top: 50px;
+}.footer>div>p{
+    font-size: small;
+    
+}.lastpart>p{
+    font-size: small;
+    text-align: center;
+}.lastpart{
+    background-color: rgb(249,249,249);
+    padding:10px 0px 40px 0px;
+    margin-top: 3px;
+}
