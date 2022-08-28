@@ -1,0 +1,24 @@
+.navbar{
+    display:flex;
+    justify-content:flex-end;
+  
+    text-decoration: none;
+    padding:15px 0px 15px 0px;
+    background-color: rgb(249,249,249);
+    color: black;
+    gap:30px;
+    position: fixed;
+    width: 100%;
+   
+  
+    
+}.navbar>p{
+    text-decoration: none;
+  color: black;
+  font-size: small;
+ 
+}.navbar>p:last-child{
+    padding-right: 20px;
+}.navbar>div{
+    padding-right: 130px;
+}

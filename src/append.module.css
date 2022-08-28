@@ -1,0 +1,35 @@
+.append{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    column-gap:30px;
+   row-gap: 30px;
+   
+ 
+  
+    
+}.append>div{
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    margin: auto;
+    /* margin-top: 50px; */
+   
+}.append>div>p{
+    font-size: 14px;
+    text-align: center;
+    margin-top: -10px;
+    color:rgb(68,54,77);
+}.append>div>p:nth-child(2){
+    margin-top: 10px;
+}.append>div>p:nth-child(4){
+    color: blue;
+}.heading>h1{
+    width:60%;
+    margin: auto;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    color: rgb(68,68,68);
+    font-size: 60px;
+}.link>img{
+    width:100%;
+}
