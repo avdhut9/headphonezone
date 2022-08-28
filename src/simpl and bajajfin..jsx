@@ -1,3 +1,4 @@
+
 import styles from "./bajaj.module.css"
 
 function Bajaj(){
@@ -23,4 +24,5 @@ Payment Gateway: Choose Razorpay at checkout</p>
         </div>
     )
 }
+
 export{Bajaj}

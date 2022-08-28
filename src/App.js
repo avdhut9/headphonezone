@@ -13,8 +13,12 @@ function App() {
   return (
     <div>
        <div className="App">
+
      <Allroutes/>
 </div>
+
+    
+
     </div>
    
   );

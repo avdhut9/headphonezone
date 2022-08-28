@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import styles from "./navbar.module.css"
 function Navbar(){
@@ -21,4 +22,5 @@ function Navbar(){
       </div>
     )
 }
+
 export{Navbar}

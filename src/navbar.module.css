@@ -1,3 +1,4 @@
+
 .navbar{
     display:flex;
     justify-content:flex-end;
@@ -21,4 +22,5 @@
     padding-right: 20px;
 }.navbar>div{
     padding-right: 130px;
+
 }

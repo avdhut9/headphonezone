@@ -1,3 +1,4 @@
+
 import styles from "./music.module.css"
 function Music(){
    return(
@@ -19,4 +20,5 @@ src="https://player.vimeo.com/video/681364200?autoplay=1&amp;autopause=1&amp;bac
     </div>
    )
 }
+
 export{Music}

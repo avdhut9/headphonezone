@@ -1,5 +1,6 @@
 
 
+
 import { Link } from "react-router-dom"
 import styles from "./headphones.module.css"
 function Headphones(){
@@ -52,4 +53,5 @@ Regular price₹ 3,999</p></div>
         </div>
     )
 }
+
 export{Headphones}

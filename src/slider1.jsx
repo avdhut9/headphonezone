@@ -1,3 +1,4 @@
+
 import { useRef } from "react"
 import { useEffect } from "react"
 import { useState } from "react"
@@ -34,4 +35,5 @@ function Slider(){
 </div>
     )
 }
+
 export{Slider}

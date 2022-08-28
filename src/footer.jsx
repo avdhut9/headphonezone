@@ -1,3 +1,4 @@
+
 import styles from "./footer.module.css"
 
 function Footer(){
@@ -70,4 +71,5 @@ function Footer(){
         </div>
     )
 }
+
 export{Footer}
