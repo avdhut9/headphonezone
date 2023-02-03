@@ -6,7 +6,7 @@ function Footer(){
         <div>
         <div className={styles.footer}>
             <div>
-                <h3>LET US HELP</h3>
+                <p>LET US HELP</p>
                 <p>Help Center</p>
                 <p>Track My Order</p>
                 <p>Cancel My Order</p>
@@ -16,7 +16,7 @@ function Footer(){
                 <p>Contact Us</p>
             </div>
             <div>
-                <h3>OUR POLICIES</h3>
+                <p>OUR POLICIES</p>
                 <p>Shipping & Delivery</p>
                 <p>Returns, Refunds & Cancellations</p>
                 <p>Terms & Conditionsr</p>
@@ -25,14 +25,14 @@ function Footer(){
                 
             </div>
             <div>
-                <h3>COMMUNITY</h3>
+                <p>COMMUNITY</p>
                 <p>Headphone Zone Merchandise</p>
                 <p>Trade-Up Program</p>
                 <p>The Insider</p>
                
             </div>
             <div>
-                <h3>BEWARE OF FAKES</h3>
+                <p>BEWARE OF FAKES</p>
                 <p>Don't get fooled. Look out for smuggled &</p>
                 <p>refurbished headphones while shopping online.</p>
                 <p>Headphone Zone is a professionally run business</p>
@@ -40,7 +40,7 @@ function Footer(){
                
             </div>
             <div>
-                <h3>FOLLOW US</h3>
+                <p>FOLLOW US</p>
                 <div className={styles.insta}><div>  <a href="https://www.facebook.com/HeadphoneZone" target="_blank" rel="noopener" class="social-media__link" aria-label="Follow us on Facebook"><svg focusable="false" width="9" height="17" class="icon icon--facebook   " viewBox="0 0 9 17">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M2.486 16.2084L2.486 8.81845H0L0 5.93845L2.486 5.93845L2.486 3.81845C2.38483 2.79982 2.73793 1.78841 3.45107 1.05407C4.16421 0.319722 5.16485 -0.0628415 6.186 0.00844868C6.9284 0.00408689 7.67039 0.0441585 8.408 0.128449V2.69845L6.883 2.69845C6.4898 2.61523 6.08104 2.73438 5.79414 3.01585C5.50724 3.29732 5.3803 3.70373 5.456 4.09845L5.456 5.93845H8.308L7.936 8.81845H5.46L5.46 16.2084H2.486Z" fill="currentColor"></path>
       </svg></a></div>

@@ -1,9 +1,9 @@
 import { useContext, useEffect, useState } from "react";
 import {useParams
 } from "react-router-dom";
-import { context } from "./context";
-import { Footer } from "./footer";
-import { Navbar } from "./navbar";
+import { context } from "../contextapi/context";
+import { Footer } from "../components/footer";
+
 import styles from "./product.module.css"
 
 
@@ -283,7 +283,7 @@ function Product(){
     const{insert}=contextdata
 
     const params=useParams()
-    const[data,setdata]=useState([])
+    const[data,setdata]=useState({})
     
    
 
@@ -299,27 +299,30 @@ function getdata(){
   
  
  
-let update= data1.filter(function(ele){
+let update= data1.find(function(ele){
     return (ele.id==ok)
  })
   
-    setdata([...update])
+    setdata(update)
    }
-   async function addtocart(){
-    alert("item added to cart")
-    const url=`https://avadhut0511.herokuapp.com/posts`
-    for(let i=0;i<=data.length-1;i++){
-        let x=JSON.stringify(data[i])
-    let res= await fetch(url,{
-        method:"POST",
-        body:x,
-        headers:{
-            "Content-Type":"application/json"
-        }
-     })
-     let New=await res.json()
-     console.log(New)
+   async function addtocart(id){
+    try{
+        let x=data1.find((ele)=>{
+            return ele.id==id
+        })
+        const res=await fetch("https://erin-agreeable-viper.cyclic.app/data1",{
+            method:"POST",
+            body:JSON.stringify(x),
+            headers:{
+                "Content-Type":"application/json"
+            }
+        })
+        alert("product added successfully")
+    }catch(e){
+   
+        alert("something went wrong")
     }
+    
 
    }
    console.log(data)
@@ -327,20 +330,20 @@ let update= data1.filter(function(ele){
  
     return(
 <div className={styles.product}>
-    <Navbar/>
-{data.map((ele)=>
+
+
        <div className={styles.split}>
         <div>
-<img src={ele.image} alt="" />
+<img src={data.image} alt="" />
 </div>
-<div><p>{ele.name}</p>
-        <p>{ele.name1}</p>
-        <p>Rs {ele.price}/-</p>
-        <button onClick={addtocart}>Add to Cart</button>
+<div><p>{data.name}</p>
+        <p>{data.name1}</p>
+        <p>Rs {data.price}/-</p>
+        <button onClick={()=>addtocart(data.id)}>Add to Cart</button>
         </div>
     
         </div>
-       )}
+       )
        <Footer/>
 </div>
     )

@@ -5,10 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
-import { Contextprovider } from './context';
+import { Contextprovider } from './contextapi/context';
+import ContextProvider from './contextapi/taskcontext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+    <ContextProvider>
     <Contextprovider>
     <BrowserRouter>
  
@@ -16,6 +18,7 @@ root.render(
 
     </BrowserRouter>
     </Contextprovider>
+    </ContextProvider>
    
 
 );

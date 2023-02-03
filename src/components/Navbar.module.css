@@ -1,0 +1,89 @@
+body{
+    overflow-x: hidden;
+}
+.header{
+    padding:20px;
+    height: 30px;
+    background-color:rgb(249,249,249);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: gray;
+    }.navlist{
+    display: flex;
+   gap:20px;
+  list-style: none;
+  font-size: small;
+}.listitem{
+    color: black;
+    text-decoration: none;
+   
+}.listitem:link,.listitem:visited{
+
+  display: inline-block;
+ 
+}.listitem:active,.listitem:hover{
+    color: brown;
+}.mobiconbtn{
+    display: none;
+    cursor: pointer;
+}.close{
+    display: none;
+}
+/* responsive */
+@media only screen and (min-width:100px) and (max-width:950px){
+   .mobiconbtn{
+    display: block;
+    z-index: 100;
+   }
+   .header{
+    position: relative;
+   }
+   .navbar{
+    
+    position: absolute;
+    width:100%;
+    height:100vh;
+    left:0;
+    top:0;
+    background-color: rgb(230, 230, 230);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transform: translateX(-100%);
+   opacity: 0;
+   visibility: hidden;
+   pointer-events: none;
+   }.navlist{
+flex-direction: column;
+text-align: center;
+
+
+   }.active .navbar{
+    transform: translateX(0);
+    transition: all 0.5s linear;
+    visibility: visible;
+    opacity: 1;
+   pointer-events: auto;
+   }
+   .active>.mobiconbtn>.close{
+  position: absolute;
+
+  right:0;
+  top:0;
+ 
+    display: block;
+ 
+   }
+    .active>.mobiconbtn>.menu{
+    
+    display: none;
+   }.active{
+  
+     overflow: hidden;
+    
+   }.active .navlist{
+    row-gap: 0px;
+   }
+}

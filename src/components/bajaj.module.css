@@ -1,0 +1,28 @@
+.parent{
+    display: flex;
+  background-color:rgb(249,249,249);
+  padding:30px 0px 30px 0px;
+  justify-items: center;
+
+  justify-content: space-around;
+  gap:60px;
+  width: 70%;
+  margin: auto;
+
+}.bap{
+  background-color: rgb(249,249,249);;
+}
+@media only screen and (min-width:500px) and (max-width:900px){
+  .parent{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width:100px) and (max-width:499px){
+  .parent{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

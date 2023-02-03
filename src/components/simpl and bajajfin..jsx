@@ -3,7 +3,8 @@ import styles from "./bajaj.module.css"
 
 function Bajaj(){
     return(
-        <div className={styles.parent}>
+       <div className={styles.bap}>
+         <div className={styles.parent}>
             <div className={styles.bajaj}>
             <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/simpl-homepage_238x.png?v=1661144152" alt="" />
             <h2>10% CASHBACK UP TO ₹750 ON ORDERS ABOVE ₹3,999/-</h2>
@@ -22,6 +23,7 @@ Payment Gateway: Choose Razorpay at checkout</p>
             </div>
          
         </div>
+       </div>
     )
 }
 

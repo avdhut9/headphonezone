@@ -1,0 +1,86 @@
+
+.button{
+display: grid;
+grid-template-columns:repeat(4,1fr);
+
+gap: 20px;
+width: 60%;
+margin: auto;
+margin-bottom: 50px;
+text-decoration: none;
+
+}.button button{
+  
+    border-radius: 25px;
+    border:1px solid transparent;
+    background-color: blue;
+    color: white;
+    width: 200px;
+    margin:auto;
+    text-decoration: none;
+    cursor: pointer;
+}.button button p{
+  color:white;
+  text-decoration: none;
+}
+.images{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+gap:10px;
+justify-content: center;
+
+width:90%;
+margin: auto;
+
+}.images>div img{
+    width:200px;
+
+}.images>div>h2{
+    font-size: small;
+}.images>div>p{
+    font-size: small;
+}.ok button{
+    padding:15px 40px 15px 40px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: blue;
+    color: white;
+    margin-top: 3%;
+    cursor: pointer;
+}.viewmore{
+    display: flex;
+    justify-content: center;
+}.images>div{
+  cursor: pointer;
+}
+@media only screen and (min-width:500px) and (max-width:900px){
+    .button{
+        grid-template-columns:repeat(2,1fr);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }.images{
+        grid-template-columns: repeat(2,1fr);
+        justify-content: space-around;
+       align-items: center;
+       margin: auto;
+     margin-top: 30px;
+       text-align: center;
+    }
+  }
+  @media only screen and (min-width:100px) and (max-width:499px){
+    .button{
+        grid-template-columns:repeat(1,1fr);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+    }.images{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: space-around;
+       align-items: center;
+       margin: auto;
+     margin-top: 30px;
+       text-align: center;
+    }
+  }

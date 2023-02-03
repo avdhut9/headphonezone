@@ -1,7 +1,7 @@
 import { useState } from "react"
 import styles from "./append.module.css"
-import { Footer } from "./footer"
-import { Navbar } from "./navbar"
+import { Footer } from "../components/footer"
+
 import { Link } from "react-router-dom";
 
 
@@ -282,7 +282,7 @@ function Append(){
     const[data,setdata]=useState(data1)
     return(
         <div className={styles.heading}>
-          <div>  <Navbar/>
+          <div>  
             </div>
             <h1>BEST SELLING HEADPHONES OF THE WEEK</h1>
 

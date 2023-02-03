@@ -1,0 +1,96 @@
+
+.split{
+    display:flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 50px;
+}.split>div{
+    
+    padding-top: 100px;
+    text-align: center;
+}.split>div>img{
+    width:500px;
+
+ 
+}.split>div>p:nth-child(1){
+    font-size: 50px;
+    font-weight: 800;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    color: rgb(68,68,68);
+}.split>div>p:nth-child(2){
+    margin-top: -40px;
+    color: rgb(68,68,68);
+}.split>div>p:nth-child(3){
+    color: blue;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: -5px;
+}.split>div>button{
+    padding:20px 100px 20px 100px;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+}@media only screen and (min-width:500px) and (max-width:900px){
+    .split{
+       flex-direction: column;
+ row-gap: 50px;
+       align-items: center;
+    }.split>div>img{
+        width:400px;
+        margin: auto;
+        text-align: center;
+    }.split>div>p:nth-child(1){
+        font-size: 50px;
+        font-weight: 800;
+        font-family: sans-serif;
+        letter-spacing: 2px;
+        color: rgb(68,68,68);
+    }.split>div>p:nth-child(2){
+        margin-top: -40px;
+        color: rgb(68,68,68);
+    }.split>div>p:nth-child(3){
+        color: blue;
+        font-size: 35px;
+        font-weight: bolder;
+        margin-top: -5px;
+    }
+}
+@media only screen and (min-width:100px) and (max-width:499px){
+    .split{
+        flex-direction: column;
+       
+        align-items: center;
+    }.split>div>img{
+        width:300px;
+        margin: auto;
+     
+    }.split>div>p:nth-child(1){
+        font-size: 40px;
+        font-weight: 800;
+        font-family: sans-serif;
+        letter-spacing: 2px;
+        color: rgb(68,68,68);
+    }.split>div>p:nth-child(2){
+        margin-top: -40px;
+        color: rgb(68,68,68);
+    }.split>div>p:nth-child(3){
+        color: blue;
+        font-size: 30px;
+        font-weight: bolder;
+        margin-top: -5px;
+    }.split>div>button{
+        padding:15px 70px 15px 70px;
+        border-radius: 25px;
+        border: 1px solid transparent;
+        background-color: blue;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    
+    }
+}

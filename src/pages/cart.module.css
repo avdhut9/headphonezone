@@ -1,0 +1,43 @@
+.cart>div{
+  width: 100%;
+    padding-top: 130px;
+}.cart>div>div>img{
+   width:200px;
+   margin: auto;
+}.change{
+    display: flex;
+    width: 100%;
+   justify-content: space-around;
+border: 1px solid grey;
+text-align: center;
+}.change>div>button{
+    margin-top: 30px;
+}.er{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}.flex{
+    display: flex;
+    justify-content: center;
+    column-gap:90px;
+    align-items: center;
+    
+}
+@media only screen and (min-width:500px) and (max-width:900px){
+    .flex{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }.change{
+        flex-direction: column;
+    }
+  }
+  @media only screen and (min-width:100px) and (max-width:499px){
+    .flex{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }.change{
+        flex-direction: column;
+    }
+  }

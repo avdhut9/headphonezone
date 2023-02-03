@@ -9,7 +9,7 @@ const images=[
     {image:"https://cdn.shopify.com/s/files/1/0153/8863/files/Shouer-S12_HomepageBanner_Desktop_1400x.jpg?v=1661157094"},
     {image:"https://cdn.shopify.com/s/files/1/0153/8863/files/KA-Series_HomepageBanner_Desktop_1400x.jpg?v=1661158197"}
 ]
-function Slider(){
+export default function Slider(){
     const[count,setcount]=useState(0)
     const ref=useRef(null)
  useEffect(()=>{
@@ -30,10 +30,9 @@ function Slider(){
   },[])
   return(
         <div className={styles.slider1}>
-<img src={images[count].image}></img>
+<img height="600px" src={images[count].image}></img>
 
 </div>
     )
 }
 
-export{Slider}
