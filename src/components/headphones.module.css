@@ -8,7 +8,9 @@ width: 60%;
 margin: auto;
 margin-bottom: 50px;
 text-decoration: none;
-
+text-align: center;
+justify-content: center;
+align-items: center;
 }.button button{
   
     border-radius: 25px;
@@ -19,6 +21,8 @@ text-decoration: none;
     margin:auto;
     text-decoration: none;
     cursor: pointer;
+    text-align: center;
+  
 }.button button p{
   color:white;
   text-decoration: none;

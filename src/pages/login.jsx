@@ -41,6 +41,7 @@ if(!x){
  dispatch({type:"login"})
  dispatch({type:"user",payload:x.username})
  dispatch({type:"id",payload:Number(x.id)})
+ localStorage.setItem("logintoken",x.username)
     }
     console.log(formdata)
     return state.islogin?<Navigate to="/"/>:(

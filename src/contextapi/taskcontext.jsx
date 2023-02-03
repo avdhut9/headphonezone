@@ -2,9 +2,10 @@ import { useReducer } from "react";
 import { createContext } from "react";
 
 export const Textcontext=createContext();
+const token=localStorage.getItem("logintoken")||""
 const initialdata={
     username:"",
-    islogin:false,
+    islogin:!!token,
     issignup:false,
      id:""
     }
